@@ -10,7 +10,7 @@ speech encoder.
 spoken sentiment analysis, and spoken emotion classification. These improvements were
 observed in both fine-tuned and non-fine-tuned settings, as well as few-shot settings.
 
-![](./readme/method.svg)
+<img src="./readme/method.svg" style="background: white;">
 
 ## Usage
 
