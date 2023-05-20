@@ -6,7 +6,7 @@ SEGUE is a pre-training approach for sequence-level spoken language understandin
 tasks. We use knowledge distillation on a parallel speech-text corpus (e.g. an ASR corpus)
 to distil language understanding knowledge from a textual sentence embedder to a pre-trained
 speech encoder.
-[SEGUE applied to Wav2Vec 2.0](https://huggingface.co/declare-lab/segue-w2v2-base) improves performance for many SLU tasks, including intent classification / slot-filling,
+SEGUE applied to Wav2Vec 2.0 improves performance for many SLU tasks, including intent classification / slot-filling,
 spoken sentiment analysis, and spoken emotion classification. These improvements were
 observed in both fine-tuned and non-fine-tuned settings, as well as few-shot settings.
 
@@ -20,7 +20,7 @@ We provide a conda environment file `environment.yml` for reference, though the 
 
 ### Pre-training
 
-*Note: we provide a [pre-trained checkpoint]((https://huggingface.co/declare-lab/segue-w2v2-base)), so you may skip this step if you want to run downstream tasks.*
+*Note: we provide a [pre-trained checkpoint](https://huggingface.co/declare-lab/segue-w2v2-base), so you may skip this step if you want to run downstream tasks.*
 
 Use the pre-training script `pretrain_segue.py`, for example:
 
@@ -76,7 +76,7 @@ Please refer to the paper for full results.
 |Model|Accuracy|
 |-|-|
 |w2v 2.0|89.4&plusmn;2.3|
-|SEGUE|97.6&plusmn;0.5|
+|SEGUE|**97.6&plusmn;0.5**|
 
 *Note: Wav2Vec 2.0 fine-tuning was unstable. Only 3 out of 6 runs converged, the result shown were taken from converged runs only.*
 
@@ -85,7 +85,7 @@ Please refer to the paper for full results.
 |Model|Accuracy|
 |-|-|
 |w2v 2.0|54.0|
-|SEGUE|77.9|
+|SEGUE|**77.9**|
 
 #### Few-shot
 
@@ -101,7 +101,7 @@ Plots of k-shot per class accuracy against k:
 |-|-|-|
 |w2v 2.0|47.3|39.3|
 |SEGUE|53.2|41.1|
-|SEGUE (higher LR)|54.1|47.2|
+|SEGUE (higher LR)|**54.1**|**47.2**|
 
 *Note: Wav2Vec 2.0 fine-tuning was unstable at the higher LR.*
 
@@ -110,7 +110,7 @@ Plots of k-shot per class accuracy against k:
 |Model|Sentiment F1|Emotion F1|
 |-|-|-|
 |w2v 2.0|45.0&plusmn;0.7|34.3&plusmn;1.2|
-|SEGUE|45.8&plusmn;0.1|35.7&plusmn;0.3|
+|SEGUE|**45.8&plusmn;0.1**|**35.7&plusmn;0.3**|
 
 #### Few-shot
 
