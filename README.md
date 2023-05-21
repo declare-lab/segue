@@ -1,6 +1,6 @@
 # Sentence Embedder Guided Utterance Encoder (SEGUE) for Spoken Language Understanding
 
-[Paper](./placeholder) | [Model checkpoint](https://huggingface.co/declare-lab/segue-w2v2-base)
+[Paper](segue.pdf) | [Model checkpoint](https://huggingface.co/declare-lab/segue-w2v2-base)
 
 SEGUE is a pre-training approach for sequence-level spoken language understanding (SLU) 
 tasks. We use knowledge distillation on a parallel speech-text corpus (e.g. an ASR corpus)
