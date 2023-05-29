@@ -64,9 +64,9 @@ def main():
             writer.writerow(['n', 'Seed', 'eval_acc', 'test_acc'])
 
     model = SegueForAsr.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
     )
-    model.speech_encoder = Wav2Vec2Model.from_pretrained('facebook/wav2vec2-base-960h')
+    # model.speech_encoder = Wav2Vec2Model.from_pretrained('facebook/wav2vec2-base-960h')
 
     train_set = FleursDatasetAdapter(fleurs_train, model.processor)
     dev_set = FleursDatasetAdapter(fleurs_dev , model.processor)

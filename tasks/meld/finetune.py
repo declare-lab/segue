@@ -12,7 +12,7 @@ def main():
     meld_test_set = MeldDataset('data/MELD/MELD.AudioOnly', DataSplitType.TEST)
 
     model = SegueForClassification.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
         n_classes=[3, 7],
         # train_backbone=False,
     )

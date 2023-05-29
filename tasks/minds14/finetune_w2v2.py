@@ -11,7 +11,7 @@ def main():
     minds14_train_set, minds14_dev_set, minds14_test_set = split_data(minds14)
 
     model = SegueForClassification.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
         n_classes=14,
     )
     model.speech_encoder = Wav2Vec2Model.from_pretrained('facebook/wav2vec2-base-960h')

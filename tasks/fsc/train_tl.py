@@ -13,7 +13,7 @@ def main():
     fsc_test_set = FluentSpeechCommandsDataset(fsc_path, DataSplitType.TEST)
 
     model = SegueForClassification.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
         n_classes=[6, 14, 8],
         train_backbone=False,
     )

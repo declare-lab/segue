@@ -11,7 +11,7 @@ def main():
     mosei_test_set = MoseiDataset('data/MOSEI', 'output/cache/MOSEI', DataSplitType.TEST)
 
     model = SegueForRegression.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
     )
     model.train_text_encoder = True
     # restore dropout in case it was disabled during pretraining

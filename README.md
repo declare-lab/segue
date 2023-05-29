@@ -35,7 +35,7 @@ python pretrain_avg.py
 ```
 
 Modify the above scripts as appropriate for your use case, e.g. output directories,
-training settings, range of checkpoints to average.
+training settings, range of checkpoints to average, HF Datasets cache directory.
 
 ### Downstream tasks
 
@@ -49,7 +49,7 @@ some or all of the following scripts:
  - `few_shot.py` for few-shot learning
 
 Modify the above scripts as appropriate for your use case, e.g. output directories,
-training settings, range of checkpoints to average.
+training settings, range of checkpoints to average, HF Datasets cache directory.
 
 If you want to write your own tasks, we also have the classes `SegueForRegression` and `SegueForClassification`. For classification, the number of classes can be specified
 through the `n_classes` field in model config,

@@ -25,7 +25,7 @@ def n_shot_per_class(meld_train_set, meld_dev_set, meld_test_set, n, seed):
         meld_train_set = sample_few_shot(meld_train_set, n, seed)
 
     model = SegueForClassification.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
         train_backbone=False,
         n_classes=[3, 7]
     )

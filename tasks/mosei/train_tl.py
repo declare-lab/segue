@@ -10,7 +10,7 @@ def main():
     mosei_test_set = MoseiDataset('data/MOSEI', 'output/cache/MOSEI', DataSplitType.TEST)
 
     model = SegueForRegression.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
         train_backbone=False,
     )
     # Uncomment the next TWO lines to use w2v2 baseline encoder:

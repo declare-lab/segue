@@ -11,7 +11,7 @@ def main():
     mosei_test_set = MoseiDataset('data/MOSEI', 'output/cache/MOSEI', DataSplitType.TEST)
 
     model = SegueForRegression.from_pretrained(
-        "output/2023-02-08-final/averaged-10",
+        "declare-lab/segue-w2v2-base",
     )
     model.speech_encoder = Wav2Vec2Model.from_pretrained('facebook/wav2vec2-base-960h')
     # restore dropout in case it was disabled during pretraining

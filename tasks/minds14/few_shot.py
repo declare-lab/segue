@@ -80,7 +80,7 @@ def main():
 
     n_values = [1, 2, 4, 8, 16, -1]
     for n, seed in itertools.product(n_values, range(37, 40)):
-        eval_, pred = n_shot_per_class("output/2023-02-08-final/averaged-10", minds14_train_set, minds14_dev_set, minds14_test_set, n, seed)
+        eval_, pred = n_shot_per_class("declare-lab/segue-w2v2-base", minds14_train_set, minds14_dev_set, minds14_test_set, n, seed)
         pred = pred.metrics
         with open(result_path, 'a') as file:
             writer = csv.writer(file)
